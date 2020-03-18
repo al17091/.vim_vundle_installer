@@ -26,6 +26,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git "$INSTALL_DIR"
 
 
 echo 'copyed ~/.vimrc'
-git clone https://github.com/al17091/vimrc_git/vimrc_vundle ~/.vimrc
+git clone https://github.com/al17091/vimrc_git.git
+cp ./vimrc_git/vimrc_vundle ~/.vimrc
+rm -r ./vimrc_git
 vim +PluginInstall +qall
 
