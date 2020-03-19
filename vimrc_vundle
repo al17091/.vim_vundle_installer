@@ -11,7 +11,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set incsearch
-set smartinde
+set smartindent
 
 function! s:execute_ctags() abort
 
@@ -41,7 +41,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
- Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
