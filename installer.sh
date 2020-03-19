@@ -25,7 +25,12 @@ fi
 git clone https://github.com/VundleVim/Vundle.vim.git "$INSTALL_DIR"
 
 
+#Vundle Install
 echo 'copyed ~/.vimrc'
+cp ./vimrc ~/.vimrc
+vim +PluginInstall +qall
+
+#vimrc setup for Ctag
 cp ./vimrc_vundle ~/.vimrc
 vim +PluginInstall +qall
 
