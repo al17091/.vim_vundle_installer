@@ -25,7 +25,7 @@ fi
 
 #make bundle dir and fetch bundle
 echo 'check install directory'
-if ![-e "$INSTALL_DIR"]; then
+if ![ -e "$INSTALL_DIR"]; then
     mkdir -p "$BUNDLE_DIR"
 fi
 
