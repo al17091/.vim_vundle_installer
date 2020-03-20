@@ -3,7 +3,7 @@
 BUNDLE_DIR=~/.vim/bundle
 INSTALL_DIR="$BUNDLE_DIR/vundle.vim"
 echo "install at $INSTALL_DIR"
-if [ -e "$INSTALL_DIR" ]; then
+if [ -d "$INSTALL_DIR" ]; then
     echo "$INSTALL_DIR already exists!"
 fi
 
@@ -25,7 +25,7 @@ fi
 
 #make bundle dir and fetch bundle
 echo 'check install directory'
-if ![ -e "$INSTALL_DIR"]; then
+if ![ -d "$INSTALL_DIR"]; then
     mkdir -p "$BUNDLE_DIR"
 fi
 
