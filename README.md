@@ -1,26 +1,30 @@
-# vimrc
-my .vimrc config
+# Installer .vimrc for vundle and Plugin
 
-vimのPlugin導入のためにNeoBundleを使用
+This is Installer for .vimrc and vundle(plugin manager)
 
-.vimrcにて以下を記述
-・Ctagsの設定
-・NeoBundleの設定
-・Pluginの詳細設定
+# requirement
 
-Plugin List
- 'Shougo/neosnippet.vim'
- 'Shougo/neosnippet-snippets'
- 'tpope/vim-fugitive' //git
- 'ctrlpvim/ctrlp.vim' 
- 'flazz/vim-colorschemes'
- 'Shougo/unite.vim' //for search file
- 'Shougo/neomru.vim' 
- 'scrooloose/nerdtree'  //show directory by tree
- 'tomtom/tcomment_vim'
- 'vim-syntastic/syntastic'  //checker
- 'w0rp/ale'                 //checker
- 'itchyny/lightline.vim'    //status line
- 'maximbaz/lightline-ale'   //to use lightline and ale
- 'Yggdroot/indentLine'      //show indent by line  
- 'Shougo/vimshell'
+*git
+*ctags
+を必要をします。
+
+# Installation
+
+linux 対応
+'''in terminal
+git clone https://github.com/al17091/vimrc_git.git
+cd vimrc_git
+sh ./installer.sh
+'''
+
+# Note
+
+ctagsとgitがない場合、インストールせずに終了します。
+
+# Author
+
+作成情報を列挙する
+
+* al17091
+* SIT
+* al17091@shibaura-it.ac.jp
