@@ -4,8 +4,8 @@ This is Installer for .vimrc and vundle(plugin manager)
 
 # requirement
 
-*git
-*ctags
+* git
+* ctags
 を必要をします。
 
 # Installation
