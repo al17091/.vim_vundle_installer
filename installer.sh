@@ -39,6 +39,6 @@ cp ./firstvim ~/.vimrc
 vim +PluginInstall +qall
 
 #vimrc setup for Ctag
-#cp ./vimrc ~/.vimrc
-#vim +PluginInstall +qall
+cp ./vimrc ~/.vimrc
+vim +PluginInstall +qall
 
