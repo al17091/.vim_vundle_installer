@@ -3,13 +3,13 @@
 BUNDLE_DIR=~/.vim/bundle
 INSTALL_DIR="$BUNDLE_DIR/vundle.vim"
 echo "install at $INSTALL_DIR"
-if [-e "$INSTALL_DIR"]; then
+if [ -e "$INSTALL_DIR" ]; then
     echo "$INSTALL_DIR already exists!"
 fi
 
 #check git command
 if type git; then
-    :#If you have git command, No problem.
+    : #If you have git command, No problem.
 else
     echo 'Please install git or update your path to include the git executable!'
     exit 1
@@ -17,7 +17,7 @@ fi
 
 #check ctags command
 if type ctags; then
-    :#If you have git command, No problem
+    : #If you have git command, No problem
 else
     echo 'Please install ctags or update your path to include the ctags executable!'
     exit 1
