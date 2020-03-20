@@ -14,7 +14,7 @@ This is Installer for .vimrc and vundle(plugin manager)
 linux 対応  
 '''in terminal  
 git clone https://github.com/al17091/.vim_vundle_installer.git  
-cd vimrc_git  
+cd .vim_vundle_installer  
 sh ./installer.sh  
 '''  
 
