@@ -13,6 +13,7 @@ set shiftwidth=4
 set incsearch
 set smartindent
 
+set tags=.tags;$HOME
 function! s:execute_ctags() abort
 
     " 探すタグファイル名
