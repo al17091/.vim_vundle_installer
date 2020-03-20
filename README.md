@@ -6,6 +6,7 @@ This is Installer for .vimrc and vundle(plugin manager)
 
 * git
 * ctags
+
 を必要をします。
 
 # Installation
@@ -23,8 +24,4 @@ ctagsとgitがない場合、インストールせずに終了します。
 
 # Author
 
-作成情報を列挙する
-
 * al17091
-* SIT
-* al17091@shibaura-it.ac.jp
