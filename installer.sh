@@ -15,22 +15,30 @@ else
     exit 1
 fi
 
+#check ctags command
+if type ctags; then
+    :#If you have git command, No problem
+else
+    echo 'Please install ctags or update your path to include the ctags executable!'
+    exit 1
+fi
+
 #make bundle dir and fetch bundle
-echo "Begin fetching Vundle..."
+echo 'check install directory'
 if ![-e "$INSTALL_DIR"]; then
     mkdir -p "$BUNDLE_DIR"
 fi
 
 #If install directory already exist, install will contine.
-git clone https://github.com/VundleVim/Vundle.vim.git "$INSTALL_DIR"
-
+echo 'start install vundle'
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #Vundle Install
 echo 'copyed ~/.vimrc'
-cp ./vimrc ~/.vimrc
+cp ./firstvim ~/.vimrc
 vim +PluginInstall +qall
 
 #vimrc setup for Ctag
-cp ./vimrc_vundle ~/.vimrc
-vim +PluginInstall +qall
+#cp ./vimrc ~/.vimrc
+#vim +PluginInstall +qall
 

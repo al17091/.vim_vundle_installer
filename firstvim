@@ -1,21 +1,10 @@
-if 0| endif
-
+set nocompatible
 filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-if has('vim_starting')
-	if &compatible
-		set nocompatible
-	endif
-	set rtp+=~/.vim/bundle/neobundle.vim
-endif
+"この下に追加したいプラグインを入力する
+Plugin 'VundleVim/Vundle.vim'
 
-call neobundle#begin(expand('~.vim/bundle/'))
-NeoBundle 'Shougo/neobundle.vim'
-
-call neobundle#end()
-
+call vundle#end()
 filetype plugin indent on
-filetype indent on
-syntax on
-NeoBundleCheck
-
