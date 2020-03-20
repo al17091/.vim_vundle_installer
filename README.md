@@ -11,12 +11,12 @@ This is Installer for .vimrc and vundle(plugin manager)
 
 # Installation
 
-linux 対応
-'''in terminal
-git clone https://github.com/al17091/vimrc_git.git
-cd vimrc_git
-sh ./installer.sh
-'''
+linux 対応  
+'''in terminal  
+git clone https://github.com/al17091/.vim_vundle_installer.git  
+cd vimrc_git  
+sh ./installer.sh  
+'''  
 
 # Note
 
